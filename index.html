@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,31 +13,257 @@
 
 <body>
 
-    <main class="app">
+    <!-- Fake Desktop -->
+    <div class="desktop">
 
-        <h1>Uselessly Cheerful</h1>
+        <!-- Desktop Header -->
+        <div class="desktop-header">
 
-        <p class="subtitle">
-            A completely unnecessary source of happiness.
-        </p>
+            <div class="desktop-logo">
+                🌸 Uselessly Cheerful
+            </div>
 
-        <!-- Mood Selection -->
-        <section class="controls">
+            <div class="desktop-time" id="desktopTime">
+                12:00
+            </div>
 
-            <label for="mood">Choose your mood:</label>
+        </div>
 
-            <select id="mood">
-                <option value="happy">Happy</option>
-                <option value="sad">Sad</option>
-                <option value="savage">Savage</option>
-                <option value="chaotic">Chaotic</option>
-            </select>
 
-        </section>
+        <!-- Main App Window -->
+        <div class="app-window">
 
-    </main>
+            <!-- Window Header -->
+            <div class="window-header">
+
+                <div class="window-title">
+                    🌸 Uselessly Cheerful
+                </div>
+
+                <button
+                    class="settings-button"
+                    id="settingsButton"
+                    title="Settings">
+                    ⚙
+                </button>
+
+            </div>
+
+
+            <!-- Main Content -->
+            <div class="app-content">
+
+                <div class="welcome-section">
+
+                    <div class="flower-decoration">
+                        🌸 ✦ 🌼
+                    </div>
+
+                    <h1>Uselessly Cheerful</h1>
+
+                    <p>
+                        A completely unnecessary source of happiness.
+                    </p>
+
+                    <button
+                        class="message-button"
+                        id="messageButton">
+                        Give me a useless message
+                    </button>
+
+                </div>
+
+
+                <!-- Desktop Status -->
+                <div class="status-bar">
+
+                    <div class="status-item">
+                        <span class="status-dot"></span>
+                        Message system online
+                    </div>
+
+                    <div class="status-item">
+                        Mood:
+                        <strong id="currentMood">Happy</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Settings Panel -->
+        <div
+            class="settings-overlay"
+            id="settingsOverlay">
+
+            <div class="settings-panel">
+
+                <!-- Settings Header -->
+                <div class="settings-header">
+
+                    <div>
+                        <span class="settings-icon">⚙</span>
+                        <h2>Settings</h2>
+                    </div>
+
+                    <button
+                        class="close-settings"
+                        id="closeSettings">
+                        ×
+                    </button>
+
+                </div>
+
+
+                <p class="settings-subtitle">
+                    Choose the emotional state of this completely
+                    unnecessary application.
+                </p>
+
+
+                <!-- Mood Settings -->
+                <div class="setting-section">
+
+                    <h3>Message Mood</h3>
+
+                    <div class="mood-options">
+
+
+                        <button
+                            class="mood-option active"
+                            data-mood="happy">
+
+                            <span class="mood-icon">🌸</span>
+
+                            <span class="mood-info">
+                                <strong>Happy</strong>
+                                <small>
+                                    Wholesome & positive
+                                </small>
+                            </span>
+
+                            <span class="selection">✓</span>
+
+                        </button>
+
+
+                        <button
+                            class="mood-option"
+                            data-mood="sad">
+
+                            <span class="mood-icon">🌧️</span>
+
+                            <span class="mood-info">
+                                <strong>Sad</strong>
+                                <small>
+                                    Dramatic & melancholic
+                                </small>
+                            </span>
+
+                            <span class="selection">✓</span>
+
+                        </button>
+
+
+                        <button
+                            class="mood-option"
+                            data-mood="savage">
+
+                            <span class="mood-icon">🔥</span>
+
+                            <span class="mood-info">
+                                <strong>Savage</strong>
+                                <small>
+                                    Playful roasts
+                                </small>
+                            </span>
+
+                            <span class="selection">✓</span>
+
+                        </button>
+
+
+                        <button
+                            class="mood-option"
+                            data-mood="chaotic">
+
+                            <span class="mood-icon">🌀</span>
+
+                            <span class="mood-info">
+                                <strong>Chaotic</strong>
+                                <small>
+                                    Completely unhinged
+                                </small>
+                            </span>
+
+                            <span class="selection">✓</span>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <div class="settings-footer">
+                    <span>🌷</span>
+                    Your mood controls the uselessness.
+                    <span>🌷</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Fake Desktop Icons -->
+
+        <div class="desktop-icons">
+
+            <div class="desktop-icon">
+                <div>🌸</div>
+                <span>Cheerfulness</span>
+            </div>
+
+            <div class="desktop-icon">
+                <div>📁</div>
+                <span>Definitely Important</span>
+            </div>
+
+            <div class="desktop-icon">
+                <div>💾</div>
+                <span>Useless Files</span>
+            </div>
+
+        </div>
+
+
+        <!-- Bottom Taskbar -->
+
+        <div class="taskbar">
+
+            <div class="taskbar-start">
+                🌸
+            </div>
+
+            <div class="taskbar-title">
+                Uselessly Cheerful
+            </div>
+
+            <div class="taskbar-status">
+                Online for no reason
+            </div>
+
+        </div>
+
+    </div>
+
 
     <script type="module" src="js/app.js"></script>
 
 </body>
+
 </html>

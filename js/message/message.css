@@ -1,105 +1,138 @@
-/* ================================
-   Message Popup
-   ================================ */
+/* =========================================
+   MESSAGE POPUP
+   ========================================= */
 
 .message-popup {
+
     position: fixed;
+
     top: 50%;
+
     left: 50%;
 
-    transform: translate(-50%, -50%) scale(0.8);
+    transform:
+        translate(-50%, -50%)
+        scale(0.8);
 
-    min-width: 280px;
-    max-width: 420px;
-    padding: 25px 30px;
+    width: min(400px, 85vw);
+
+    padding: 30px;
 
     background: white;
-    border-radius: 20px;
 
-    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
+    border-radius: 18px;
 
     text-align: center;
 
-    font-family: Arial, sans-serif;
+    box-shadow:
+        0 25px 70px rgba(0,0,0,0.25);
+
+    border: 1px solid #eee;
 
     opacity: 0;
 
-    z-index: 1000;
+    z-index: 5000;
 
-    animation: popupIn 0.35s ease forwards;
+    animation:
+        popupIn 0.3s ease forwards;
 }
 
 
-/* Message text */
+/* Message */
 
 .message-text {
-    margin: 0;
 
-    font-size: 20px;
+    font-size: 19px;
+
     line-height: 1.5;
 
-    color: #333;
+    color: #403846;
+
+    margin: 0;
 }
 
 
-/* Close button */
+/* Button */
 
 .message-close {
-    margin-top: 18px;
 
-    padding: 8px 18px;
+    margin-top: 20px;
+
+    padding: 9px 22px;
 
     border: none;
-    border-radius: 12px;
 
-    background: #ffb6c1;
-    color: #333;
+    border-radius: 10px;
 
-    font-size: 14px;
+    background: #42384a;
+
+    color: white;
+
+    font-size: 13px;
 
     cursor: pointer;
 
-    transition: transform 0.2s ease;
+    transition:
+        transform 0.2s ease;
 }
 
 
 .message-close:hover {
-    transform: scale(1.08);
+
+    transform: scale(1.05);
 }
 
 
-/* Popup entrance animation */
+/* =========================================
+   ANIMATION
+   ========================================= */
 
 @keyframes popupIn {
 
     from {
+
         opacity: 0;
-        transform: translate(-50%, -50%) scale(0.8);
+
+        transform:
+            translate(-50%, -50%)
+            scale(0.8);
     }
 
     to {
+
         opacity: 1;
-        transform: translate(-50%, -50%) scale(1);
+
+        transform:
+            translate(-50%, -50%)
+            scale(1);
     }
 }
 
 
-/* Popup disappearing animation */
-
 .message-popup.hide {
-    animation: popupOut 0.3s ease forwards;
+
+    animation:
+        popupOut 0.3s ease forwards;
 }
 
 
 @keyframes popupOut {
 
     from {
+
         opacity: 1;
-        transform: translate(-50%, -50%) scale(1);
+
+        transform:
+            translate(-50%, -50%)
+            scale(1);
     }
 
     to {
+
         opacity: 0;
-        transform: translate(-50%, -50%) scale(0.8);
+
+        transform:
+            translate(-50%, -50%)
+            scale(0.8);
     }
 }
