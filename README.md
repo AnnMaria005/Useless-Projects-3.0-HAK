@@ -8,8 +8,8 @@ A completely unnecessary desktop experience designed to make your day slightly b
 
 ### Team Members
 
-* Member 1: [Ann Maria Benadict] - [Carmel College of Engineering and Technology]
-* Member 2: [Khulood Salam] - [Carmel College of Engineering and Technology]
+* Member 1: Ann Maria Benadict - Carmel College of Engineering and Technology
+* Member 2: Khulood Salam - Carmel College of Engineering and Technology
 
 ### Project Description
 
@@ -217,25 +217,18 @@ The application will open in the browser.
 
 ### Screenshot 1 – Useless Desktop
 
-![Screenshot1](screenshots/desktop.png)
-
 ![alt text](image-3.png)
 
 ### Screenshot 2 – Mood Settings
-
-![Screenshot2](screenshots/settings.png)
 
 ![alt text](image-1.png)
 
 ### Screenshot 3 – Cheerful Message
 
-![Screenshot3](screenshots/message.png)
 
 ![alt text](image-2.png)
 
 ### Screenshot 4 – Mouse Garden
-
-![Screenshot4](screenshots/mouse-garden.png)
 
 ![alt text](image.png)
 ---
