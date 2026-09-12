@@ -221,7 +221,7 @@ The application will open in the browser.
 
 ### Screenshot 2 – Mood Settings
 
-![alt text](image-1.png)
+![alt text](image-4.png)
 
 ### Screenshot 3 – Cheerful Message
 
