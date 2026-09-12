@@ -28,3 +28,11 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+import { setMouseMode } from './mouse.js';
+
+const permanentToggle = document.getElementById('permanent-mode-toggle');
+
+permanentToggle.addEventListener('change', (e) => {
+    setMouseMode('permanent', e.target.checked);
+});
