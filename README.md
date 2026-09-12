@@ -279,8 +279,7 @@ The application will open in the browser.
 https://useless-projects-3-0-hak.vercel.app/
 
 ## Video
-
-[Add your demo video link here]
+https://drive.google.com/drive/folders/1c1fCg6CN5llzhMEQKFZogjNwKPvsm5xR?usp=sharing
 
 *The demo video demonstrates the fake desktop interface, mood selection, random cheerful messages, mouse garden effects, fake folders/files and other intentionally useless interactions.*
 
