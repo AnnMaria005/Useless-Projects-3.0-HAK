@@ -275,6 +275,9 @@ The application will open in the browser.
 
 # Project Demo
 
+## Deployed Link
+https://useless-projects-3-0-hak.vercel.app/
+
 ## Video
 
 [Add your demo video link here]
